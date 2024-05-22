@@ -1,6 +1,7 @@
 import Restaurant from './components/restaurant';
 import { restaurants } from './consts/mock';
 
+// ДЗ-1
 const App = () => {
     return (
         <>
