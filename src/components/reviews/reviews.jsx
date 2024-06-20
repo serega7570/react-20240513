@@ -4,7 +4,7 @@ const Reviews = ({ reviews }) => {
     return (
         <ul>
             {reviews.map((review) => {
-                return <Review review={review} />;
+                return <Review key={review.id} review={review} />;
             })}
         </ul>
     );

@@ -4,7 +4,7 @@ const Dishes = ({ dishes }) => {
     return (
         <ul>
             {dishes.map((dish) => {
-                return <Dish dish={dish} />;
+                return <Dish key={dish.id} dish={dish} />;
             })}
         </ul>
     );
