@@ -6,9 +6,9 @@ const Restaurant = ({ restaurant }) => {
         <div>
             <h1>{restaurant.name}</h1>
             <h3>Меню</h3>
-            <Dishes dishes={restaurant.menu} />
+            {!!restaurant.menu.length && <Dishes dishes={restaurant.menu} />}
             <h3>Отзывы</h3>
-            <Reviews reviews={restaurant.reviews} />
+            {!!restaurant.reviews && <Reviews reviews={restaurant.reviews} />}
         </div>
     );
 };
